@@ -18,15 +18,15 @@ def load_train(train_path, image_size, classes):
         path = os.path.join(train_path, fields, '*g')
         files = glob.glob(path)
         for fl in files:
-            img = cv2.imread(fl) # change image to img when using CLAHE
+            image = cv2.imread(fl)# change image to img to use CLAHE
             
-            #CLAHE PREPROCESSING
+            '''#CLAHE PREPROCESSING
             hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
             h, s, v = hsv_img[:,:,0], hsv_img[:,:,1], hsv_img[:,:,2]
             clahe = cv2.createCLAHE(clipLimit = 2.5, tileGridSize = (20,20))
             v = clahe.apply(v)
             hsv_img = np.dstack((h,s,v))
-            image = cv2.cvtColor(hsv_img, cv2.COLOR_HSV2RGB)
+            image = cv2.cvtColor(hsv_img, cv2.COLOR_HSV2RGB)'''
 
             image = cv2.resize(image, (image_size, image_size),0,0, cv2.INTER_LINEAR)
             image = image.astype(np.float32)
