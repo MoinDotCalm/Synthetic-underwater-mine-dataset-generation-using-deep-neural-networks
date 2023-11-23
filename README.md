@@ -1,4 +1,4 @@
-[Google Drive](https://drive.google.com/drive/u/1/folders/1iBngNqF4Kyruc1Lf6ujNtj2b8tt2So46)
+[Click here for Google Drive](https://drive.google.com/drive/u/1/folders/1iBngNqF4Kyruc1Lf6ujNtj2b8tt2So46)
 
 # Synthetic-underwater-mine-dataset-generation-using-deep-neural-networks
 
